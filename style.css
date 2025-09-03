@@ -147,7 +147,7 @@ p {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    gap: 10px;
+    gap: 20px;
     cursor: url('ATPstretchvert.cur'), pointer;
 }
 
