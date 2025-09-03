@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    
+
     const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -99,4 +101,28 @@ document.addEventListener('DOMContentLoaded', () => {
             fill.style.filter = 'brightness(1)';
         });
     });
+});
+
+const loadingMessages = [
+  "use truffled.lol",
+  "frogie my twin",
+  "szvy is a fatass",
+  "silksong tmw",
+  "npa.lol",
+  "baby shlawng"
+];
+
+const loadingText = document.getElementById("loading-text");
+const loadingScreen = document.getElementById("loading-screen");
+
+window.addEventListener("load", () => {
+  const msg = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
+  loadingText.textContent = msg;
+  loadingText.style.opacity = 1;
+
+  setTimeout(() => {
+    loadingScreen.style.opacity = "0";
+    loadingScreen.style.transition = "opacity 0.8s ease";
+    setTimeout(() => loadingScreen.remove(), 800);
+  }, 700);
 });
