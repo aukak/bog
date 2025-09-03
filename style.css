@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0f1c;
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #3b82f6, #60a5fa);
+    border-radius: 10px;
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #60a5fa, #3b82f6);
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+body {
+    background: #0a0f1c;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+    text-transform: lowercase;
+    cursor: url('ATPpoint.cur'), pointer;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.pfp-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: -10px;
+    cursor: url('ATPpoint.cur'), pointer;
+}
+
+.pfp {
+    width: 180px;
+    height: 180px;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+    cursor: url('ATPpoint.cur'), pointer;
+}
+
+.pfp-container:hover .pfp {
+    filter: brightness(0.7);
+    cursor: url('ATPpoint.cur'), pointer;
+}
+
+.pfp-mute-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(59, 130, 246, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+.pfp-container:hover .pfp-mute-btn {
+    opacity: 1;
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+.pfp-mute-btn:hover {
+    background: rgba(59, 130, 246, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+h1 {
+    color: #3b82f6;
+    margin-bottom: 15px;
+    font-weight: 400;
+    cursor: url('ATPstretchvert.cur'), pointer;
+}
+
+h2 {
+    color: #60a5fa;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    cursor: url('ATPstretchvert.cur'), pointer;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    cursor: url('ATPstretchvert.cur'), pointer;
+}
+
+p {
+    margin-bottom: 30px;
+    font-weight: 300;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: url('ATPstretchvert.cur'), pointer;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.skills {
+    max-width: 600px;
+    margin: 0 auto;
+    cursor: url('ATPpoint.cur'), pointer;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+    cursor: url('ATPstretchvert.cur'), pointer;
+}
+
+.lang {
+    width: 60px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.bar {
+    flex: 1;
+    height: 8px;
+    background: #1a1f2e;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    border-radius: 10px;
+    transition: width 1s ease-out;
+}
+
+.percent {
+    width: 40px;
+    text-align: right;
+    font-size: 12px;
+    color: #9ca3af;
+    font-weight: 300;
+}
+
+.projects {
+    max-width: 350px;
+    margin: 0 auto;
+    cursor: url('ATPpoint.cur'), pointer;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    cursor: url('ATPpoint.cur'), pointer;
+}
+
+.project-img {
+    width: 80px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+.project-info {
+    flex: 1;
+    cursor: url('ATPpoint.cur'), pointer;
+}
+
+.project-info p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #9ca3af;
+    max-width: none;
+    cursor: url('ATPstretchvert.cur'), pointer;
+}
+
+.divider {
+    width: 60px;
+    height: 1px;
+    background: #3b82f6;
+    margin: 30px auto;
+}
+
+.vertical-line {
+    width: 1px;
+    background: #3b82f6;
+    margin: 15px; 
+
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    color: #60a5fa;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+.social-btn:hover {
+    color: #3b82f6;
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+.music-controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+.music-btn {
+    cursor: url('ATPlink.cur'), pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.music-btn:hover {
+    cursor: url('ATPlink.cur'), pointer;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.music-btn:active {
+    transform: scale(0.95);
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+.music-btn.playing {
+    animation: pulse 2s infinite;
+    cursor: url('ATPlink.cur'), pointer;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(59, 130, 246, 0.6);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .vertical-line {
+        display: none;
+    }
+}
