@@ -107,8 +107,9 @@ const loadingMessages = [
   "use truffled.lol",
   "frogie my twin",
   "szvy is a fatass",
-  "silksong tmw",
+  "silksong NOW",
   "npa.lol",
+  "thinking about him <3",
   "baby shlawng"
 ];
 
